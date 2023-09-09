@@ -1,13 +1,9 @@
 {
   description = "A shell";
+  
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs;
   };
-
-  /*inputs.flake-compat = {
-    url = "github:edolstra/flake-compat";
-    flake = false;
-  };*/
  
   outputs = { self, nixpkgs, ... } @ inputs:
     let
